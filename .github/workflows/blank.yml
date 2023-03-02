@@ -13,7 +13,7 @@ jobs:
         with:
           from: './README.md'
           to: '124158189' # The confluence page id where to write the output
-          cloud: https://rsrg.atlassian.net
+          cloud: rsrg.atlassian.net
           user: erich.raschle@rsrg.com
           token: ${{ secrets.GITHUB_TOKEN  }}
 
