@@ -1,0 +1,16 @@
+# .github/workflows/my-workflow.yml
+on: [push]
+
+jobs:
+  dev:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: cupcakearmy/confluence-markdown-sync@v1
+        with:
+          from: './README.md'
+          to: '124158189' # The confluence page id where to write the output
+          cloud: https://rsrg.atlassian.net
+          user: erich.raschle@rsrg.com
+          token: ${{ secrets.token }}
