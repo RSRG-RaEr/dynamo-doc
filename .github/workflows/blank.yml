@@ -15,6 +15,6 @@ jobs:
           to: '124158189' # The confluence page id where to write the output
           cloud: https://rsrg.atlassian.net
           user: erich.raschle@rsrg.com
-          token: ${{ SHA256:xgOLh7DUNYQ4r3gu840Dxlz+v4Q9HFz2TuTJjQ/gIaY }}
+          token: ${{ ssh.GITHUB_TOKEN  }}
 
 
