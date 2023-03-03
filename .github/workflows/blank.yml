@@ -15,6 +15,6 @@ jobs:
           to: '124158189' # The confluence page id where to write the output
           cloud: 'rsrg'
           user: 'erich.raschle@rsrg.com'
-          token: ${{ secrets.GITHUB_TOKEN  }}
+          token: ${{ secrets.CONFLUENCE  }}
 
 
